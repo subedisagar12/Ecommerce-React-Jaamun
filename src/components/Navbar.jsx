@@ -1,13 +1,13 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
+          <Link className="navbar-brand" to="/">
             My Ecommerce
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -22,9 +22,9 @@ function Navbar() {
           <div className="collapse navbar-collapse" id="navbarNavDropdown">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
+                <Link className="nav-link active" aria-current="page" to="/">
                   Home
-                </a>
+                </Link>
               </li>
 
               <li className="nav-item dropdown">
@@ -54,6 +54,12 @@ function Navbar() {
                     </a>
                   </li>
                 </ul>
+              </li>
+
+              <li className="nav-item">
+                <Link className="nav-link" aria-current="page" to="/cart">
+                  <i className="fa-solid fa-cart-shopping"></i> My Cart
+                </Link>
               </li>
             </ul>
           </div>

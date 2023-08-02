@@ -9,6 +9,7 @@ import Navbar from "./components/Navbar";
 
 import ProductDetail from "./pages/ProductDetail";
 import Homepage from "./pages/Homepage";
+import CartPage from "./pages/CartPage";
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
         <Route path="/" element={<Homepage />} />
 
         <Route path="/product/detail" element={<ProductDetail />} />
+
+        <Route path="/cart" element={<CartPage />} />
       </Routes>
     </>
   );

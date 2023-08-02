@@ -1,4 +1,6 @@
 import React from "react";
+import Counter from "../components/Counter";
+import AddToCartButton from "../components/AddToCartButton";
 
 function ProductDetail() {
   return (
@@ -28,9 +30,9 @@ function ProductDetail() {
               debitis!
             </p>
 
-            <a href="#" className="btn btn-primary">
-              Add to cart
-            </a>
+            <Counter />
+
+            <AddToCartButton />
           </div>
         </div>
       </div>
